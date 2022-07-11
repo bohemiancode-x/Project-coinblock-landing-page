@@ -1,0 +1,66 @@
+.coin-list ul {
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+.coin-list ul li {
+    padding-left: 20px;
+    background: #eee;
+}
+.coin-list ul li:hover {
+    background-color: white;
+}
+.coin-list ul li .coin {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.coin-list ul li .coin p:first-child {
+    cursor: pointer;
+}
+.coin-list ul li .coin p {
+    text-align: start;
+}
+.coin-list ul li .coin img {
+    height: 25px;
+}
+.coin-list ul span {
+    display: block;
+    background-color: white;
+    width: 120%;
+    height: 10px;
+    margin-left: -20px;
+}
+.coin-list .coin .figures {
+    width: 30%;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    padding-right: 25px;
+}
+.coin-list .coin .figures p:last-child {
+    margin-left: auto;
+    width: 50%;
+}
+.coin-list .coin .figures p {
+    text-align: flex-start;
+}
+
+@media screen and (max-width: 500px) {
+    .coin-list {
+        max-width: 450px;
+        font-size: 0.8rem;
+    }
+    .coin-list ul li .coin {
+        gap: 5px;
+    }
+    .coin-list .coin p:last-child {
+        display: none;
+    }
+    .coin .figures p:first-child {
+        margin-left: auto;
+        width: 50%;
+        padding-right: 20px;
+    }
+}
