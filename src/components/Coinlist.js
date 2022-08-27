@@ -15,8 +15,8 @@ export default function Coinlist({ coins }) {
                         <p>{i.name}</p>
                         <p>({i.symbol.toUpperCase()})</p>
                         <div className='figures'>
-                            <p>${i.current_price}</p>
-                            <p>${i.market_cap}</p>
+                            <p>${i.current_price.toLocaleString()}</p>
+                            <p>${i.market_cap.toLocaleString()}</p>
                         </div>
                     </div>
                     <span></span>
